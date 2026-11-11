@@ -34,8 +34,8 @@ assets/img/                    photos and favicon
 
 ## Changing the CSS
 
-Every page links `styles.css?v=2`. After editing `assets/css/styles.css`, bump that number on every page
-(for example to `?v=3`) so browsers fetch the new stylesheet instead of a cached one.
+Every page links `styles.css?v=4`. After editing `assets/css/styles.css`, bump that number on every page
+(for example to `?v=5`) so browsers fetch the new stylesheet instead of a cached one.
 
 ## Analytics
 

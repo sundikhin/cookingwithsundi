@@ -10,6 +10,7 @@
   --blush: #F2D3C2;
   --cocoa: #3B2218;
   --olive: #5F6D40;
+  --paper: #FFFFFF;
 
   --font-display: "Fraunces", Georgia, serif;
   --font-body: "DM Sans", system-ui, -apple-system, sans-serif;
@@ -361,9 +362,14 @@ a { color: inherit; }
   gap: clamp(32px, 6vw, 80px);
   align-items: center;
   padding: 40px 0 56px;
+  margin: 20px 0 48px;
+  /* full-width paper band behind the header, without causing sideways scroll */
+  background: var(--paper);
+  box-shadow: 0 0 0 100vmax var(--paper);
+  clip-path: inset(0 -100vmax);
 }
 .recipe-hero .display { font-size: clamp(48px, 6.5vw, 76px); }
-.recipe-hero .frame { aspect-ratio: 5 / 6; }
+.recipe-hero .frame { aspect-ratio: 4 / 3; }
 
 .recipe-body {
   display: grid;
@@ -529,6 +535,7 @@ a { color: inherit; }
   .site-header, .site-footer, .btn-row, .breadcrumb, .more-to-cook, .recipe-hero .frame, .toast { display: none !important; }
   body { background: #fff; }
   .recipe-hero, .recipe-body { grid-template-columns: 1fr; padding: 0; gap: 16px; }
+  .recipe-hero { margin: 0; background: none; box-shadow: none; clip-path: none; }
   .display { color: var(--cocoa); }
   .ingredients, .note { background: none; border: var(--line); }
 }
