@@ -32,6 +32,11 @@ assets/img/                    photos and favicon
 3. Add `"recipes/<new-slug>/"` to the `RECIPES` list in `assets/js/main.js` so "Surprise me" can pick it.
 4. Put a photo in `assets/img/` and swap the `frame__placeholder` span for an `<img>`.
 
+## Changing the CSS
+
+Every page links `styles.css?v=2`. After editing `assets/css/styles.css`, bump that number on every page
+(for example to `?v=3`) so browsers fetch the new stylesheet instead of a cached one.
+
 ## Analytics
 
 Page views go to [GoatCounter](https://cookingwithsundi.goatcounter.com). Every public page has this

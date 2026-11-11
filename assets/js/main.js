@@ -7,6 +7,7 @@ const RECIPES = [
   "recipes/honeynut-squash-mac-and-cheese/",
   "recipes/neoguri-copycat-ramen/",
   "recipes/no-knead-overnight-bread/",
+  "recipes/rice-porridge-congee/",
 ];
 
 // Pages set data-root to the relative path back to the site root ("" or "../" etc.)

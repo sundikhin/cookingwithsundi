@@ -449,6 +449,7 @@ a { color: inherit; }
 }
 .method h3 { font-size: 22px; margin-bottom: 4px; }
 .method p { margin: 0; }
+.method p + p { margin-top: 14px; }
 
 .note {
   background: var(--mustard);
