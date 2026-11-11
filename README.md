@@ -32,6 +32,18 @@ assets/img/                    photos and favicon
 3. Add `"recipes/<new-slug>/"` to the `RECIPES` list in `assets/js/main.js` so "Surprise me" can pick it.
 4. Put a photo in `assets/img/` and swap the `frame__placeholder` span for an `<img>`.
 
+## Analytics
+
+Page views go to [GoatCounter](https://cookingwithsundi.goatcounter.com). Every public page has this
+just before `</body>` (copying an existing recipe folder carries it over; add it by hand to any brand-new page):
+
+```html
+<script data-goatcounter="https://cookingwithsundi.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+```
+
+Visits from `localhost` aren't counted. Leave it off `tools/` and `_og/`.
+
 ## Brand rules (short version)
 
 - Cream page, cocoa text, terracotta leads; blush and sage support.
